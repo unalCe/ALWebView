@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9220AD123E4539C0038DB4E /* ALWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9220ACF23E4539C0038DB4E /* ALWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9220AD823E4605D0038DB4E /* ALWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9220AD723E4605D0038DB4E /* ALWebView.swift */; };
+		D9220ADA23E4684B0038DB4E /* ALWebNavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9220AD923E4684B0038DB4E /* ALWebNavigationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9220ACC23E4539C0038DB4E /* ALWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ALWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9220ACF23E4539C0038DB4E /* ALWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ALWebView.h; sourceTree = "<group>"; };
 		D9220AD023E4539C0038DB4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9220AD723E4605D0038DB4E /* ALWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALWebView.swift; sourceTree = "<group>"; };
+		D9220AD923E4684B0038DB4E /* ALWebNavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALWebNavigationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +48,9 @@
 		D9220ACE23E4539C0038DB4E /* ALWebView */ = {
 			isa = PBXGroup;
 			children = (
-				D9220ACF23E4539C0038DB4E /* ALWebView.h */,
 				D9220AD023E4539C0038DB4E /* Info.plist */,
+				D9220AD723E4605D0038DB4E /* ALWebView.swift */,
+				D9220AD923E4684B0038DB4E /* ALWebNavigationDelegate.swift */,
 			);
 			path = ALWebView;
 			sourceTree = "<group>";
@@ -59,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9220AD123E4539C0038DB4E /* ALWebView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 				TargetAttributes = {
 					D9220ACB23E4539C0038DB4E = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9220ADA23E4684B0038DB4E /* ALWebNavigationDelegate.swift in Sources */,
+				D9220AD823E4605D0038DB4E /* ALWebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		D9220AD523E4539C0038DB4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HQ965V8P7W;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.applogist.ALWebView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		D9220AD623E4539C0038DB4E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = HQ965V8P7W;
