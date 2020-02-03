@@ -11,8 +11,11 @@ import WebKit
 
 public protocol ALWebNavigationDelegate: WKNavigationDelegate {
     /// No extra methods for now.
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void)
 }
 
+
+// Burası şuan useless, düzenle.
 extension ALWebNavigationDelegate {
     
     /*

@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "ALWebView"
-  spec.version      = "0.0.1"
+  spec.version      = "0.1.0"
   spec.summary      = "A reusable WebView for AppLogist team."
   
   spec.description  = "This pod aims to make it easier to use a WebView in iOS Development. User can load a web page with url request or HTML code. "
@@ -58,16 +58,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "ALWebView/**/*.{swift}"
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-  
-  spec.resources = "ALWebView/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 
   spec.swift_version = "4.2"
 
